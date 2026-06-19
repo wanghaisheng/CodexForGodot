@@ -1,0 +1,16 @@
+# Copy the server blocks you use into your local Codex config.
+# Do not commit machine-specific paths, tunnel URLs, passwords, or tokens.
+
+[mcp_servers.godot_enhanced]
+command = "npx"
+args = ["-y", "godot-mcp-enhanced"]
+
+[mcp_servers.godot_native]
+type = "streamableHttp"
+url = "http://localhost:9080/mcp"
+
+[mcp_servers.devspace]
+type = "streamableHttp"
+url = "http://127.0.0.1:7676/mcp"
+# For remote ChatGPT-style access, use your private tunnel URL locally:
+# url = "https://your-tunnel-host.example.com/mcp"
